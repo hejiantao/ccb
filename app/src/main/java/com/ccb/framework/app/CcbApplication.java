@@ -8,11 +8,11 @@ import android.app.Application;
 
 public class CcbApplication  extends Application{
     private static CcbApplication instance;
-    public CcbApplication getInstance(){
+    public static CcbApplication getInstance(){
         if(instance==null){
             throw new RuntimeException("IlleagelStateExp : instance is null, application error");
         }
-        return this.instance;
+        return instance;
     }
 
     @Override
