@@ -128,5 +128,8 @@ public class CcbSkinColorTool {
     public ColorStateList getCustomSelectorColor(int paramInt1,int paramInt2){
         return new ColorStateList();
     }
+   public ColorStateList getDefaultColorStateList(){
+       return null;
+   }
 
 }

@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import com.ccb.common.log.MbsLogManager;
+import com.ccb.framework.ui.widget.CcbButton;
+import com.ccb.framework.ui.widget.CcbRelativeLayout;
 
 /**
  * Created by CCB on 2016/11/11.
@@ -11,6 +13,12 @@ import com.ccb.common.log.MbsLogManager;
 
 public abstract class CcbActivity extends Activity {
     private final String TAG=CcbActivity.class.getSimpleName();
+    /**
+     * 标题栏
+     * */
+    private CcbRelativeLayout ccb_title;
+
+    private CcbButton ccb_title_lefe_btn;
     /**
     * 主题颜色是否改变
      * */
